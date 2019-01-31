@@ -1,1 +1,11 @@
 C:\Users\andy3\OneDrive\Documenten\School_Documenten\gap\MonsterBattle\MonsterBattle\obj\Debug\MonsterBattle.csprojAssemblyReference.cache
+C:\Users\andy3\OneDrive\Documenten\School_Documenten\gap\MB\MonsterBattle\MonsterBattle\MonsterBattle\obj\Debug\MonsterBattle.csprojAssemblyReference.cache
+C:\Users\andy3\OneDrive\Documenten\School_Documenten\gap\MB\MonsterBattle\MonsterBattle\MonsterBattle\bin\Debug\MonsterBattle.exe.config
+C:\Users\andy3\OneDrive\Documenten\School_Documenten\gap\MB\MonsterBattle\MonsterBattle\MonsterBattle\bin\Debug\MonsterBattle.exe
+C:\Users\andy3\OneDrive\Documenten\School_Documenten\gap\MB\MonsterBattle\MonsterBattle\MonsterBattle\bin\Debug\MonsterBattle.pdb
+C:\Users\andy3\OneDrive\Documenten\School_Documenten\gap\MB\MonsterBattle\MonsterBattle\MonsterBattle\obj\Debug\MonsterBattle.BattleForm.resources
+C:\Users\andy3\OneDrive\Documenten\School_Documenten\gap\MB\MonsterBattle\MonsterBattle\MonsterBattle\obj\Debug\MonsterBattle.Properties.Resources.resources
+C:\Users\andy3\OneDrive\Documenten\School_Documenten\gap\MB\MonsterBattle\MonsterBattle\MonsterBattle\obj\Debug\MonsterBattle.csproj.GenerateResource.cache
+C:\Users\andy3\OneDrive\Documenten\School_Documenten\gap\MB\MonsterBattle\MonsterBattle\MonsterBattle\obj\Debug\MonsterBattle.csproj.CoreCompileInputs.cache
+C:\Users\andy3\OneDrive\Documenten\School_Documenten\gap\MB\MonsterBattle\MonsterBattle\MonsterBattle\obj\Debug\MonsterBattle.exe
+C:\Users\andy3\OneDrive\Documenten\School_Documenten\gap\MB\MonsterBattle\MonsterBattle\MonsterBattle\obj\Debug\MonsterBattle.pdb

@@ -64,5 +64,11 @@ namespace MonsterBattle
             this.Top += randomGenerator.Next(-5, 6);
             this.Left += randomGenerator.Next(-5, 6);
         }
+
+        private void switchButton_Click(object sender, EventArgs e)
+        {
+            Form SwitchForm = new Form();
+            SwitchForm.Show();
+        }
     }
 }

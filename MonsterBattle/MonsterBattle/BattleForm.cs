@@ -67,8 +67,14 @@ namespace MonsterBattle
 
         private void switchButton_Click(object sender, EventArgs e)
         {
-            Form SwitchForm = new Form();
-            SwitchForm.Show();
+            SwitchForm SwitchForm = new SwitchForm();
+            SwitchForm.ShowDialog();
+        }
+
+        private void bagButton_Click(object sender, EventArgs e)
+        {
+            BagForm BagForm = new BagForm();
+            BagForm.ShowDialog();
         }
     }
 }

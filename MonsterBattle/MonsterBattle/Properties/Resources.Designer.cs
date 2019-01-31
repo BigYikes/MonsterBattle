@@ -363,6 +363,16 @@ namespace MonsterBattle.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap switch_interface {
+            get {
+                object obj = ResourceManager.GetObject("switch_interface", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap switch_pokebar {
             get {
                 object obj = ResourceManager.GetObject("switch_pokebar", resourceCulture);

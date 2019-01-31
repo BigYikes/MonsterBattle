@@ -9,3 +9,5 @@ C:\Users\andy3\OneDrive\Documenten\School_Documenten\gap\MB\MonsterBattle\Monste
 C:\Users\andy3\OneDrive\Documenten\School_Documenten\gap\MB\MonsterBattle\MonsterBattle\MonsterBattle\obj\Debug\MonsterBattle.csproj.CoreCompileInputs.cache
 C:\Users\andy3\OneDrive\Documenten\School_Documenten\gap\MB\MonsterBattle\MonsterBattle\MonsterBattle\obj\Debug\MonsterBattle.exe
 C:\Users\andy3\OneDrive\Documenten\School_Documenten\gap\MB\MonsterBattle\MonsterBattle\MonsterBattle\obj\Debug\MonsterBattle.pdb
+C:\Users\andy3\OneDrive\Documenten\School_Documenten\gap\MB\MonsterBattle\MonsterBattle\MonsterBattle\obj\Debug\MonsterBattle.BagForm.resources
+C:\Users\andy3\OneDrive\Documenten\School_Documenten\gap\MB\MonsterBattle\MonsterBattle\MonsterBattle\obj\Debug\MonsterBattle.SwitchForm.resources

@@ -15,6 +15,22 @@ namespace MonsterBattle
         public SwitchForm()
         {
             InitializeComponent();
+
+        }
+
+        private void currentPokemonPictureBox_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void secondPokemonPB_Click(object sender, EventArgs e)
+        {
+            var battleForm = new BattleForm();
+            this.Hide();
+            var switchForm = new SwitchForm();
+            switchForm.Closed += (s, args) => this.Close();
+            battleForm.Show();
+
         }
     }
 }

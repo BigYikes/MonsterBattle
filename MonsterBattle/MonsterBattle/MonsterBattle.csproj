@@ -180,9 +180,6 @@
     <None Include="Resources\pokimon-cancel-button %281%29.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\pokimon-cancel-button.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Psyduck.png" />
   </ItemGroup>
   <ItemGroup>
@@ -207,10 +204,31 @@
     <None Include="Resources\Ugandan_Chungus.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\switch_interface.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pokeball.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pokimon-cancel-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zapdos_sprite.png" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\voltorb sprite.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\switch_interface.png" />
+    <None Include="Resources\pikachu_sprite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\teckle.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cannon_fast.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\explosion.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

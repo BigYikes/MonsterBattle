@@ -27,17 +27,16 @@ namespace MonsterBattle
             if (!enemyDead)
             {
                 enemyPictureBox.Tag = enemyPictureBox.Image;
-                enemyPictureBox.Image = Properties.Resources.attack_lightning;
-                
+                friendlyPictureBox.Tag = friendlyPictureBox.Image;
+                friendlyPictureBox.Image = Properties.Resources.cannon_fast;
+                enemyPictureBox.Image = Properties.Resources.explosion;
+
                 attackButton.Enabled = false;
                 attackTimer.Start();
 
                 screenShakeTimer.Start();
             }
-            else
-            {
-                MessageBox.Show("You can not strike Charizard whilst he is already down.");
-            }
+
         }
 
         private void attackTimer_Tick(object sender, EventArgs e)
@@ -47,7 +46,8 @@ namespace MonsterBattle
             attackTimer.Stop();
             attackButton.Enabled = true;
 
-            enemyPictureBox.Image = (Image) enemyPictureBox.Tag;
+            enemyPictureBox.Image = (Image)enemyPictureBox.Tag;
+            friendlyPictureBox.Image = (Image)friendlyPictureBox.Tag;
 
             enemyHealthPictureBox.Width -= 20;
 
@@ -55,7 +55,7 @@ namespace MonsterBattle
             {
                 MessageBox.Show("Charizard has fainted!");
                 enemyDead = true;
-                enemyPictureBox.Image = null;
+                enemyPictureBox.Image = Properties.Resources.god;
             }
         }
 
@@ -66,15 +66,44 @@ namespace MonsterBattle
         }
 
         private void switchButton_Click(object sender, EventArgs e)
-        {
-            SwitchForm SwitchForm = new SwitchForm();
-            SwitchForm.ShowDialog();
+        { 
+            friendlyPictureBox.Image = Properties.Resources.pikachu_back;
+            friendlyPictureBox.BackgroundImageLayout = ImageLayout.Stretch;
+
         }
 
         private void bagButton_Click(object sender, EventArgs e)
         {
             BagForm BagForm = new BagForm();
             BagForm.ShowDialog();
+        }
+
+        private void friendlyPictureBox_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void enemyPictureBox_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void enemyPictureBox_BackgroundImageChanged(object sender, EventArgs e)
+        {
+            enemyHealthPictureBox.Width = 100;
+        }
+
+        private void attackButton2_Click(object sender, EventArgs e)
+        {
+            if (!enemyDead)
+            {
+                enemyPictureBox.Tag = enemyPictureBox.Image;
+                enemyPictureBox.Image = Properties.Resources.teckle;
+
+                attackButton.Enabled = false;
+                attackTimer.Start();
+
+                screenShakeTimer.Start();
+            }
         }
     }
 }

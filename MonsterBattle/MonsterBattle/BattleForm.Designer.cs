@@ -31,6 +31,11 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BattleForm));
             this.attackButton = new System.Windows.Forms.Button();
+            this.attackTimer = new System.Windows.Forms.Timer(this.components);
+            this.screenShakeTimer = new System.Windows.Forms.Timer(this.components);
+            this.switchButton = new System.Windows.Forms.Button();
+            this.bagButton = new System.Windows.Forms.Button();
+            this.attackButton2 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -40,10 +45,6 @@
             this.enemyHealthPictureBox = new System.Windows.Forms.PictureBox();
             this.enemyPictureBox = new System.Windows.Forms.PictureBox();
             this.friendlyPictureBox = new System.Windows.Forms.PictureBox();
-            this.attackTimer = new System.Windows.Forms.Timer(this.components);
-            this.screenShakeTimer = new System.Windows.Forms.Timer(this.components);
-            this.switchButton = new System.Windows.Forms.Button();
-            this.bagButton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -58,11 +59,52 @@
             this.attackButton.Location = new System.Drawing.Point(16, 283);
             this.attackButton.Margin = new System.Windows.Forms.Padding(4);
             this.attackButton.Name = "attackButton";
-            this.attackButton.Size = new System.Drawing.Size(253, 75);
+            this.attackButton.Size = new System.Drawing.Size(115, 75);
             this.attackButton.TabIndex = 1;
-            this.attackButton.Text = "Lightningstrike";
+            this.attackButton.Text = "Cannon";
             this.attackButton.UseVisualStyleBackColor = true;
             this.attackButton.Click += new System.EventHandler(this.attackButton_Click);
+            // 
+            // attackTimer
+            // 
+            this.attackTimer.Interval = 1000;
+            this.attackTimer.Tick += new System.EventHandler(this.attackTimer_Tick);
+            // 
+            // screenShakeTimer
+            // 
+            this.screenShakeTimer.Interval = 50;
+            this.screenShakeTimer.Tick += new System.EventHandler(this.screenShakeTimer_Tick);
+            // 
+            // switchButton
+            // 
+            this.switchButton.Location = new System.Drawing.Point(340, 284);
+            this.switchButton.Name = "switchButton";
+            this.switchButton.Size = new System.Drawing.Size(109, 74);
+            this.switchButton.TabIndex = 2;
+            this.switchButton.Text = "Switch";
+            this.switchButton.UseVisualStyleBackColor = true;
+            this.switchButton.Click += new System.EventHandler(this.switchButton_Click);
+            // 
+            // bagButton
+            // 
+            this.bagButton.Location = new System.Drawing.Point(467, 284);
+            this.bagButton.Name = "bagButton";
+            this.bagButton.Size = new System.Drawing.Size(109, 74);
+            this.bagButton.TabIndex = 3;
+            this.bagButton.Text = "Bag";
+            this.bagButton.UseVisualStyleBackColor = true;
+            this.bagButton.Click += new System.EventHandler(this.bagButton_Click);
+            // 
+            // attackButton2
+            // 
+            this.attackButton2.Location = new System.Drawing.Point(148, 284);
+            this.attackButton2.Margin = new System.Windows.Forms.Padding(4);
+            this.attackButton2.Name = "attackButton2";
+            this.attackButton2.Size = new System.Drawing.Size(121, 75);
+            this.attackButton2.TabIndex = 4;
+            this.attackButton2.Text = "Tackle";
+            this.attackButton2.UseVisualStyleBackColor = true;
+            this.attackButton2.Click += new System.EventHandler(this.attackButton2_Click);
             // 
             // panel1
             // 
@@ -164,6 +206,8 @@
             this.enemyPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.enemyPictureBox.TabIndex = 1;
             this.enemyPictureBox.TabStop = false;
+            this.enemyPictureBox.BackgroundImageChanged += new System.EventHandler(this.enemyPictureBox_BackgroundImageChanged);
+            this.enemyPictureBox.Click += new System.EventHandler(this.enemyPictureBox_Click);
             // 
             // friendlyPictureBox
             // 
@@ -177,42 +221,14 @@
             this.friendlyPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.friendlyPictureBox.TabIndex = 0;
             this.friendlyPictureBox.TabStop = false;
-            // 
-            // attackTimer
-            // 
-            this.attackTimer.Interval = 1000;
-            this.attackTimer.Tick += new System.EventHandler(this.attackTimer_Tick);
-            // 
-            // screenShakeTimer
-            // 
-            this.screenShakeTimer.Interval = 50;
-            this.screenShakeTimer.Tick += new System.EventHandler(this.screenShakeTimer_Tick);
-            // 
-            // switchButton
-            // 
-            this.switchButton.Location = new System.Drawing.Point(340, 284);
-            this.switchButton.Name = "switchButton";
-            this.switchButton.Size = new System.Drawing.Size(109, 74);
-            this.switchButton.TabIndex = 2;
-            this.switchButton.Text = "Switch";
-            this.switchButton.UseVisualStyleBackColor = true;
-            this.switchButton.Click += new System.EventHandler(this.switchButton_Click);
-            // 
-            // bagButton
-            // 
-            this.bagButton.Location = new System.Drawing.Point(467, 284);
-            this.bagButton.Name = "bagButton";
-            this.bagButton.Size = new System.Drawing.Size(109, 74);
-            this.bagButton.TabIndex = 3;
-            this.bagButton.Text = "Bag";
-            this.bagButton.UseVisualStyleBackColor = true;
-            this.bagButton.Click += new System.EventHandler(this.bagButton_Click);
+            this.friendlyPictureBox.Click += new System.EventHandler(this.friendlyPictureBox_Click);
             // 
             // BattleForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(640, 373);
+            this.Controls.Add(this.attackButton2);
             this.Controls.Add(this.bagButton);
             this.Controls.Add(this.switchButton);
             this.Controls.Add(this.attackButton);
@@ -249,6 +265,7 @@
         private System.Windows.Forms.Timer screenShakeTimer;
         private System.Windows.Forms.Button switchButton;
         private System.Windows.Forms.Button bagButton;
+        private System.Windows.Forms.Button attackButton2;
     }
 }
 

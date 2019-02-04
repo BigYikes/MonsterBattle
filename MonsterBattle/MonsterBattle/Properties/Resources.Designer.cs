@@ -273,6 +273,16 @@ namespace MonsterBattle.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap katansworddance {
+            get {
+                object obj = ResourceManager.GetObject("katansworddance", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap lickizard {
             get {
                 object obj = ResourceManager.GetObject("lickizard", resourceCulture);
@@ -446,6 +456,16 @@ namespace MonsterBattle.Properties {
         internal static System.Drawing.Bitmap switch_sheet_pokimonn {
             get {
                 object obj = ResourceManager.GetObject("switch_sheet_pokimonn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tackle {
+            get {
+                object obj = ResourceManager.GetObject("tackle", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -23,19 +23,20 @@ namespace MonsterBattle
         }
 
         private void attackButton_Click(object sender, EventArgs e)
-        {
+        { 
             if (!enemyDead)
             {
                 enemyPictureBox.Tag = enemyPictureBox.Image;
                 friendlyPictureBox.Tag = friendlyPictureBox.Image;
                 friendlyPictureBox.Image = Properties.Resources.cannon_fast;
                 enemyPictureBox.Image = Properties.Resources.explosion;
-
+                
                 attackButton.Enabled = false;
                 attackTimer.Start();
 
                 screenShakeTimer.Start();
             }
+
 
         }
 

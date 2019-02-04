@@ -163,16 +163,6 @@ namespace MonsterBattle.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap cannon_fast {
-            get {
-                object obj = ResourceManager.GetObject("cannon_fast", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap dragonite {
             get {
                 object obj = ResourceManager.GetObject("dragonite", resourceCulture);
@@ -186,16 +176,6 @@ namespace MonsterBattle.Properties {
         internal static System.Drawing.Bitmap dragonite_sprite {
             get {
                 object obj = ResourceManager.GetObject("dragonite_sprite", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap explosion {
-            get {
-                object obj = ResourceManager.GetObject("explosion", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -273,16 +253,6 @@ namespace MonsterBattle.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap katansworddance {
-            get {
-                object obj = ResourceManager.GetObject("katansworddance", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap lickizard {
             get {
                 object obj = ResourceManager.GetObject("lickizard", resourceCulture);
@@ -323,29 +293,9 @@ namespace MonsterBattle.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap pikachu_sprite {
-            get {
-                object obj = ResourceManager.GetObject("pikachu_sprite", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Pohled_Franz_Joseph {
             get {
                 object obj = ResourceManager.GetObject("Pohled_Franz_Joseph", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap pokeball {
-            get {
-                object obj = ResourceManager.GetObject("pokeball", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -463,26 +413,6 @@ namespace MonsterBattle.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap tackle {
-            get {
-                object obj = ResourceManager.GetObject("tackle", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap teckle {
-            get {
-                object obj = ResourceManager.GetObject("teckle", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap trainers {
             get {
                 object obj = ResourceManager.GetObject("trainers", resourceCulture);
@@ -506,16 +436,6 @@ namespace MonsterBattle.Properties {
         internal static System.Drawing.Bitmap voltorb_sprite {
             get {
                 object obj = ResourceManager.GetObject("voltorb_sprite", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap zapdos_sprite {
-            get {
-                object obj = ResourceManager.GetObject("zapdos_sprite", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
